@@ -69,16 +69,70 @@ h3 {
   text-decoration: underline;
 }
 .home {
-  height: 420px;
+  height: 630px;
+}
+.direction_home {
+  display: inline-flex;
+}
+.navbarleft_container {
+  background: #292929;
+  height: 640px;
+  width: 200px;
+}
+.navbarleft_navbar {
+  background: #1a1a1a;
+  padding: 12px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+.navbar_left_home {
+  display: flex;
+  padding: 18px 0;
+  color: #f7f7f7;
+  background: #3f3f3f;
+  cursor: pointer;
+}
+.navbar_left_home > img {
+  height: 20px;
+  margin-left: 15px;
+}
+.navbar_left_home > p {
+  margin-left: 20px;
+}
+.navbar_left_p_color {
+  color: #cccccc;
+  font-weight: 600;
+  margin-left: 12px;
+  margin-top: 25px;
+}
+.icon_hover:hover {
+  background: #1a1a1a;
+}
+.p_hover {
+  color: #f7f7f7;
+}
+.p_hover:hover {
+  color: #d3d2d2;
+}
+.calculadora_grid {
+  grid-column: 1/-1;
+  display: flex;
 }
 .calculator_container {
-  grid-column: 1/-1;
-  background: #00000064;
+  /* margin-top: 180px;
+  margin-left: 65px;
+  background: #161616;
   height: 300px;
-  width: 700px;
+  width: 1040px; */
+  margin-left: 30px;
+  margin-top: 40px;
+  height: 560px;
+  width: 1110px;
+  background: #111111;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0px 1px 30px rgb(0, 211, 200);
+  box-shadow: 0px 1px 30px rgb(211, 0, 0);
 }
 .input_style {
   padding: 6px 46px;
@@ -92,7 +146,7 @@ h3 {
   margin-left: 35px;
   background: #00000094;
   border-radius: 8px;
-  box-shadow: 0px 1px 30px rgb(0, 211, 200);
+  box-shadow: 0px 1px 30px rgb(195, 0, 255);
 }
 .inputs_positions {
   margin-left: 22px;
@@ -108,6 +162,7 @@ h3 {
 }
 .form_container {
   display: inline-flex;
+  margin-top: 120px;
 }
 .details_form {
   height: 200px;
@@ -116,7 +171,16 @@ h3 {
   margin-left: 65px;
   background: #00000094;
   border-radius: 8px;
-  box-shadow: 0px 1px 30px rgb(0, 211, 120);
+  box-shadow: 0px 1px 30px rgb(0, 255, 136);
+}
+.paypal {
+  height: 130px;
+  width: 280px;
+  margin-top: 46px;
+  margin-left: 65px;
+  background: #00000094;
+  border-radius: 8px;
+  box-shadow: 0px 1px 30px rgb(0, 208, 245);
 }
 .details_resumen {
   text-align: center;
@@ -157,4 +221,116 @@ h3 {
 .footer_container {
   grid-column: 1/-1;
   justify-self: center;
+}
+.porcentaje {
+  height: 630px;
+}
+.porcentaje_container {
+  margin-left: 30px;
+  margin-top: 40px;
+  height: 560px;
+  width: 1110px;
+  background: #111111;
+  display: flex;
+  justify-content: center;
+  color: #cccccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 1px 30px rgb(211, 0, 0);
+}
+.bg_porcentaje_text {
+  padding: 5px 0;
+}
+.calculadora {
+  height: 630px;
+}
+.agregar {
+  height: 630px;
+}
+.agregar_container {
+  margin-left: 30px;
+  margin-top: 40px;
+  height: 560px;
+  width: 1110px;
+  background: #111111;
+  border-radius: 15px;
+  box-shadow: 0px 1px 30px rgb(211, 0, 0);
+}
+.form_agregar > h1 {
+  margin-left: 35px;
+}
+.input_agregar {
+  padding: 8px 46px;
+  border-radius: 7px;
+  margin-top: 25px;
+  margin-left: 32px;
+}
+.login_icon_agregar {
+  position: absolute;
+}
+.login_icon_agregar > img {
+  height: 25px;
+  margin-top: 30px;
+  margin-left: 43px;
+}
+.btn_agregar {
+  background: rgb(228, 0, 0);
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.btn_agregar:hover {
+  background: rgb(202, 0, 0);
+  cursor: pointer;
+}
+.selec_container {
+  margin-top: 40px;
+  margin-left: 35px;
+  height: 140px;
+}
+.selector_data {
+  padding: 3px 15px;
+  margin-left: 33px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.data_select {
+  padding: 6px 12px;
+  background: #ffffff;
+  border-radius: 6px;
+  margin-left: 15px;
+}
+.pagado_select {
+  padding: 6px 12px;
+  background: #a30101;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 6px;
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+}
+.card {
+  height: 130px;
+  width: 220px;
+  border-radius: 5px;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.card > p {
+  margin-left: 16px;
+  font-size: 20px;
+  /* background: #c98300; */
+}
+.card > img {
+  height: 35px;
+  margin-right: 159px;
+  margin-top: 10px;
+}
+.card_title {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }

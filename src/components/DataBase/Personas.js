@@ -1,0 +1,51 @@
+export const personas = [
+  {
+    id: 0,
+    nombre: "",
+    telefono: "",
+    banco: "",
+    cedula: "",
+  },
+  {
+    id: 1,
+    nombre: "Ysbelis",
+    telefono: "0412-1714-276",
+    banco: "Mercantil",
+    cedula: "19.120.145",
+  },
+  {
+    id: 2,
+    nombre: "Valerio",
+    telefono: "0412-4329-182",
+    banco: "Banesco",
+    cedula: "22.858.282",
+  },
+  {
+    id: 3,
+    nombre: "José",
+    telefono: "0412-0415-439",
+    banco: "Venezuela",
+    cedula: "27.985.144",
+  },
+  {
+    id: 4,
+    nombre: "Robinson G",
+    telefono: "0414-8138-141",
+    banco: "Banesco",
+    cedula: "25.268.758",
+  },
+  {
+    id: 5,
+    nombre: "Harvy Medina",
+    telefono: "0426-2568-026",
+    banco: "Provincial",
+    cedula: "23.484.092",
+  },
+  {
+    id: 6,
+    nombre: "Kenis^javier",
+    telefono: "0424-6848-003",
+    banco: "Bicentenario",
+    cedula: "19.007.888",
+  },
+];
