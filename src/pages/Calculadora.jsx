@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavbarLeft } from "../components/Home/NavbarLeft";
 import { personas } from "../components/DataBase/Personas";
 
@@ -43,6 +43,10 @@ export const Calculadora = () => {
   //     cedula: "27.985.144",
   //   },
   // ];
+
+  useEffect(() => {
+    document.title = "PayPal - Compra";
+  }, []);
 
   return (
     <>

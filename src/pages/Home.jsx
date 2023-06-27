@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Card } from "../components/Cards/Card";
 import { data } from "../components/DataBase/Data";
 import { personas } from "../components/DataBase/Personas";
@@ -6,6 +7,10 @@ import "../styles/Desktop/Home.css";
 import "../styles/Mobile/Home.css";
 
 export const Home = () => {
+  useState(() => {
+    document.title = "PayPal - Home";
+  }, []);
+
   return (
     <>
       <div className="home">

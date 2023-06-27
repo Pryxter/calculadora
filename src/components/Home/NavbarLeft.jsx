@@ -51,6 +51,16 @@ export const NavbarLeft = () => {
               height={20}
               navigate="/agregar"
             />
+            <div>
+              <p className="navbar_left_p_color">WORLD OF WARCRAFT</p>
+            </div>
+            <Icon
+              url="/Icons/WoW.svg"
+              alt="historial"
+              name="Historial"
+              height={20}
+              navigate="/historial"
+            />
           </div>
         </div>
       </div>

@@ -7,6 +7,10 @@ export const Porcentaje = () => {
   const porcentaje = (envian * 5.4) / 100 + 0.3;
   const recibe = envian - porcentaje;
 
+  useState(() => {
+    document.title = "PayPal - Porcentaje";
+  }, []);
+
   return (
     <>
       <div className="porcentaje">

@@ -1,0 +1,137 @@
+.h_card {
+  background: #b31f1f;
+  padding: 60px 510px;
+  border-radius: 8px;
+}
+.historial_container {
+  margin-left: 30px;
+  margin-top: 40px;
+  height: 560px;
+  width: 1110px;
+  /* background: #111111; */
+  display: flex;
+  justify-content: center;
+  /* border-radius: 10px; */
+  /* text-align: center; */
+  /* box-shadow: 0px 1px 30px rgb(211, 0, 0); */
+}
+.h_login_icon_user {
+  position: absolute;
+}
+.h_img {
+  position: absolute;
+  margin-left: -485px;
+  margin-top: -38px;
+  height: 27px;
+}
+.h_card_wow_title {
+  position: absolute;
+  background: #c28e01;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 9px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  margin-left: -450px;
+  margin-top: -33px;
+}
+.h_card_wow_name {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: -485px;
+  margin-top: -9px;
+}
+.h_card_wow_p {
+  position: absolute;
+  font-size: 13px;
+  color: #cacaca;
+  font-weight: lighter;
+  margin-left: -485px;
+  margin-top: 19px;
+}
+.h_card_wow_order {
+  position: absolute;
+  font-size: 13px;
+  color: #cacaca;
+  font-weight: lighter;
+  margin-left: -170px;
+  margin-top: -32px;
+}
+.h_card_wow_n_order {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: -170px;
+  margin-top: -13px;
+}
+.h_card_wow_payment_request {
+  position: absolute;
+  font-size: 13px;
+  color: #cacaca;
+  font-weight: lighter;
+  margin-left: -80px;
+  margin-top: -32px;
+}
+.h_card_wow_payment_request_date {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: -80px;
+  margin-top: -13px;
+}
+.h_card_wow_deadline {
+  position: absolute;
+  font-size: 13px;
+  color: #cacaca;
+  font-weight: lighter;
+  margin-left: 70px;
+  margin-top: -32px;
+}
+.h_card_wow_deadline_t {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 70px;
+  margin-top: -13px;
+}
+.h_card_wow_payment_type {
+  position: absolute;
+  font-size: 13px;
+  color: #cacaca;
+  font-weight: lighter;
+  margin-left: 220px;
+  margin-top: -32px;
+}
+.h_card_wow_payment_type_type {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 220px;
+  margin-top: -13px;
+}
+.h_card_wow_amount {
+  position: absolute;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 325px;
+  margin-top: -22px;
+}
+.h_card_wow_status {
+  position: absolute;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 418px;
+  margin-top: -24px;
+  padding: 8px 12px;
+  background: #c28e01;
+  border-radius: 5px;
+  cursor: pointer;
+}
