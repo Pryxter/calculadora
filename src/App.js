@@ -4,6 +4,7 @@ import { Calculadora } from "./pages/Calculadora";
 import { Porcentaje } from "./components/Home/Porcentaje";
 import { Agregar } from "./pages/Agregar";
 import { Historial } from "./pages/Historial";
+import { Jobs } from "./pages/Jobs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/porcentaje" element={<Porcentaje />} />
         <Route path="/agregar" element={<Agregar />} />
         <Route path="/historial" element={<Historial />} />
+        <Route path="/jobs" element={<Jobs />} />
       </Routes>
     </BrowserRouter>
   );

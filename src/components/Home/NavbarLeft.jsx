@@ -23,44 +23,54 @@ export const NavbarLeft = () => {
             <Icon
               url="/Icons/Calculadora.svg"
               alt="Calculadora"
-              name="Compra"
+              name="Buy"
               height={20}
               navigate="/calculadora"
             />
             <Icon
               url="/Icons/Percentage.svg"
               alt="Percentaje"
-              name="Percentaje"
+              name="Percentage"
               height={20}
               navigate="/porcentaje"
             />
-            <div>
+            {/* <div>
               <p className="navbar_left_p_color">CONTACTOS</p>
             </div>
             <Icon
               url="/Icons/Frecuentes.svg"
               alt="Frecuentes"
-              name="Frecuentes"
+              name="Recent"
               height={20}
               navigate="/frecuentes"
-            />
-            <Icon
-              url="/Icons/Add.svg"
-              alt="agregar"
-              name="Agregar"
-              height={20}
-              navigate="/agregar"
-            />
+            /> */}
             <div>
               <p className="navbar_left_p_color">WORLD OF WARCRAFT</p>
             </div>
             <Icon
               url="/Icons/WoW.svg"
               alt="historial"
-              name="Historial"
+              name="Payments"
               height={20}
               navigate="/historial"
             />
+            <Icon
+              url="/Historial/Job.svg"
+              alt="Jobs"
+              name="Jobs"
+              height={20}
+              navigate="/jobs"
+            />
+            <Icon
+              url="/Icons/Add.svg"
+              alt="agregar"
+              name="New"
+              height={20}
+              navigate="/agregar"
+            />
+            <div>
+              <p className="navbar_left_p_color">DIABLO IV</p>
+            </div>
           </div>
         </div>
       </div>

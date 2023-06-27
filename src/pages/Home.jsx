@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Card } from "../components/Cards/Card";
-import { data } from "../components/DataBase/Data";
-import { personas } from "../components/DataBase/Personas";
+import { useEffect } from "react";
+// import { Card } from "../components/Cards/Card";
+// import { data } from "../components/DataBase/Data";
+// import { personas } from "../components/DataBase/Personas";
 import { NavbarLeft } from "../components/Home/NavbarLeft";
 import "../styles/Desktop/Home.css";
 import "../styles/Mobile/Home.css";
 
 export const Home = () => {
-  useState(() => {
+  useEffect(() => {
     document.title = "PayPal - Home";
   }, []);
 
@@ -16,8 +16,30 @@ export const Home = () => {
       <div className="home">
         <div className="grid">
           <div className="direction_home">
-            <NavbarLeft />
-            <div>
+            <div style={{ position: "fixed" }}>
+              <NavbarLeft />
+            </div>
+            <div className="home_container" style={{ marginLeft: 230 }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "center",
+                }}
+              >
+                <div>
+                  <img
+                    src="/Historial/Owner.jpg"
+                    alt="Logo"
+                    style={{ height: 350 }}
+                    className="home_img"
+                  />
+                </div>
+                <p className="home_owner_p">Payments by Marcelo Hernandez</p>
+              </div>
+            </div>
+
+            {/* <div>
               <div style={{ display: "flex" }}>
                 <Card
                   title={personas.length - 1}
@@ -41,7 +63,7 @@ export const Home = () => {
                   alt="Ultimo Porcentaje"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

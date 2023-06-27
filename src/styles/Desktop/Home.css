@@ -76,7 +76,7 @@ h3 {
 }
 .navbarleft_container {
   background: #292929;
-  height: 640px;
+  height: 2000px;
   width: 200px;
 }
 .navbarleft_navbar {
@@ -174,8 +174,8 @@ h3 {
   box-shadow: 0px 1px 30px rgb(0, 255, 136);
 }
 .paypal {
-  height: 130px;
-  width: 280px;
+  height: 200px;
+  width: 300px;
   margin-top: 46px;
   margin-left: 65px;
   background: #00000094;
@@ -255,6 +255,44 @@ h3 {
   background: #111111;
   border-radius: 15px;
   box-shadow: 0px 1px 30px rgb(211, 0, 0);
+}
+.jobs {
+  height: 3000;
+}
+.payments {
+  height: 3000;
+}
+.home_container {
+  margin-left: 30px;
+  margin-top: 40px;
+  height: 560px;
+  width: 1110px;
+  background: #111111;
+  border-radius: 15px;
+}
+.home_img {
+  margin-top: 90px;
+  border-radius: 10px;
+  animation: mc 4s infinite;
+}
+@keyframes mc {
+  0% {
+    box-shadow: 0px 1px 30px rgb(211, 0, 0);
+  }
+  50% {
+    box-shadow: 0px 1px 30px rgb(0, 211, 176);
+  }
+  75% {
+    box-shadow: 0px 1px 30px rgb(211, 172, 0);
+  }
+  100% {
+    box-shadow: 0px 1px 30px rgb(211, 0, 0);
+  }
+}
+.home_owner_p {
+  color: #ffff;
+  margin-top: 10px;
+  font-size: 20px;
 }
 .form_agregar > h1 {
   margin-left: 35px;

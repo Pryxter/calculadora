@@ -1,14 +1,14 @@
 import { NavbarLeft } from "./NavbarLeft";
 import "../../styles/Desktop/Home.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const Porcentaje = () => {
   const [envian, setEnvia] = useState(0);
 
   const porcentaje = (envian * 5.4) / 100 + 0.3;
   const recibe = envian - porcentaje;
 
-  useState(() => {
-    document.title = "PayPal - Porcentaje";
+  useEffect(() => {
+    document.title = "PayPal - Percentage";
   }, []);
 
   return (
@@ -16,9 +16,11 @@ export const Porcentaje = () => {
       <div className="porcentaje">
         <div className="grid">
           <div className="direction_home">
-            <NavbarLeft />
+            <div style={{ position: "fixed" }}>
+              <NavbarLeft />
+            </div>
             <div>
-              <div className="porcentaje_container">
+              <div className="porcentaje_container" style={{ marginLeft: 230 }}>
                 <form style={{ display: "flex", flexDirection: "column" }}>
                   <div style={{ marginTop: 200 }}>
                     <p>5.4% + 0.30$</p>

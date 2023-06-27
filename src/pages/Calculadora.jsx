@@ -45,7 +45,7 @@ export const Calculadora = () => {
   // ];
 
   useEffect(() => {
-    document.title = "PayPal - Compra";
+    document.title = "PayPal - Buy";
   }, []);
 
   return (
@@ -54,8 +54,10 @@ export const Calculadora = () => {
         <div className="grid">
           <div className="calculadora_grid">
             <div className="direction_home">
-              <NavbarLeft />
-              <div className="calculator_container">
+              <div style={{ position: "fixed" }}>
+                <NavbarLeft />
+              </div>
+              <div className="calculator_container" style={{ marginLeft: 230 }}>
                 <div className="form_container">
                   <form>
                     <div className="inputs_container">
@@ -131,6 +133,28 @@ export const Calculadora = () => {
                       style={{ cursor: "pointer" }}
                     >
                       Hardcorebassh@gmail.com
+                    </h3>
+                    <h3
+                      className="details_compra"
+                      onClick={() =>
+                        navigator.clipboard.writeText(
+                          "Sin direccion y sin nota"
+                        )
+                      }
+                      style={{ cursor: "pointer" }}
+                    >
+                      Sin direccion y sin nota
+                    </h3>
+                    <h3
+                      className="details_compra"
+                      onClick={() =>
+                        navigator.clipboard.writeText(
+                          "Comprando PayPal por Pago Movil📱Se aceptan repeles tambien✅"
+                        )
+                      }
+                      style={{ cursor: "pointer" }}
+                    >
+                      Comprando PayPal📱
                     </h3>
                   </div>
                 </div>

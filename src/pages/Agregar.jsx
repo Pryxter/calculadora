@@ -1,16 +1,22 @@
+import { useEffect } from "react";
 import { NavbarLeft } from "../components/Home/NavbarLeft";
 
 export const Agregar = () => {
+  useEffect(() => {
+    document.title = "WoW - New";
+  }, []);
   return (
     <>
       <div className="agregar">
         <div className="grid">
           <div className="direction_home">
-            <NavbarLeft />
+            <div style={{ position: "fixed" }}>
+              <NavbarLeft />
+            </div>
             <div>
-              <div className="agregar_container">
+              <div className="agregar_container" style={{ marginLeft: 230 }}>
                 <form className="form_agregar">
-                  <div>
+                  {/* <div>
                     <h1 style={{ marginLeft: 32, padding: "16px 0" }}>
                       Agregar nuevo cliente
                     </h1>
@@ -73,7 +79,7 @@ export const Agregar = () => {
                         Registrar
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                 </form>
               </div>
             </div>
