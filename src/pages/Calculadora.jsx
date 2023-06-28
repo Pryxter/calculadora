@@ -13,40 +13,21 @@ export const Calculadora = () => {
   const montoPago = paypal * precioCompra;
   const ganancia = (paypal * porcentaje) / 100;
 
-  // const personas = [
-  //   {
-  //     id: 0,
-  //     nombre: "",
-  //     telefono: "",
-  //     banco: "",
-  //     cedula: "",
-  //   },
-  //   {
-  //     id: 1,
-  //     nombre: "Ysbelis",
-  //     telefono: "04121714276",
-  //     banco: "Mercantil",
-  //     cedula: "19.120.145",
-  //   },
-  //   {
-  //     id: 2,
-  //     nombre: "Valerio",
-  //     telefono: "04124329182",
-  //     banco: "Banesco",
-  //     cedula: "22.858.282",
-  //   },
-  //   {
-  //     id: 3,
-  //     nombre: "José",
-  //     telefono: "04120415439",
-  //     banco: "Venezuela",
-  //     cedula: "27.985.144",
-  //   },
-  // ];
-
   useEffect(() => {
     document.title = "PayPal - Buy";
   }, []);
+
+  const update = (ventaUp, porcentajeUp) => {
+    ventaUp = venta;
+    porcentajeUp = porcentaje;
+
+    const tiempoTranscurrido = Date.now();
+    const hoy = new Date(tiempoTranscurrido);
+
+    localStorage.setItem("Venta", `${ventaUp}`);
+    localStorage.setItem("Porcentaje", `${porcentajeUp}`);
+    localStorage.setItem("date", `${hoy.toDateString()}`);
+  };
 
   return (
     <>
@@ -198,6 +179,9 @@ export const Calculadora = () => {
                       className="pagado_select"
                     >
                       Pagado
+                    </button>
+                    <button onClick={() => update()} className="pagado_select">
+                      Actualizar
                     </button>
                   </div>
                 </div>
