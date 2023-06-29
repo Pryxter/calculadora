@@ -5,13 +5,24 @@ export const HistorialCard = (props) => {
     "WOW! NEW PAYMENT 🤩",
     "WOW! JOB COMPLETED 🤩",
     "WOW! JOB IN PROGRESS ⚔️",
+    "WOW! PAYMENT COMPLETED 💵",
   ];
   const selectorClass = [
     "h_card_wow_title",
     "h_card_wow_title_job",
     "h_card_wow_title_job_in_progress",
+    "h_card_wow_title_payment_completed",
   ];
+
+  const selectorPayments = [
+    "h_card_wow_payment_pending",
+    "h_card_wow_payment_paid",
+  ];
+
+  const statusPayments = ["Pending", "Paid"];
+
   const selector = props.selector;
+  const paymentSelect = props.selectorPayments;
 
   return (
     <>
@@ -35,7 +46,9 @@ export const HistorialCard = (props) => {
           <p className="h_card_wow_payment_type">Payment Type</p>
           <p className="h_card_wow_payment_type_type">{props.payment}</p>
           <p className="h_card_wow_amount">${props.amount}</p>
-          <p className="h_card_wow_status">{props.status}</p>
+          <p className={selectorPayments[paymentSelect]}>
+            {statusPayments[paymentSelect]}
+          </p>
         </div>
       </div>
     </>

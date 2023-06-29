@@ -21,38 +21,26 @@ export const Historial = () => {
                   <div style={{ marginLeft: 235 }}>
                     <div style={{ marginTop: 30 }}>
                       <HistorialCard
-                        name="David"
-                        norder="RT7557"
-                        date="Jun 27, 1:41 A.M"
-                        deadline="Jun 30, 1:41 A.M"
-                        payment="Binance"
-                        amount="25,01"
-                        status="Pending"
-                        selector={0}
-                      />
-                    </div>
-                    <div style={{ marginTop: 13 }}>
-                      <HistorialCard
                         name="Ruth"
-                        norder="SK7554"
-                        date="Jun 27, 1:41 A.M"
-                        deadline="Jun 30, 1:41 A.M"
+                        norder="RT7557"
+                        date="Jun 28, 6:26 P.M"
+                        deadline="Jun 29, 6:26 P.M"
                         payment="Binance"
-                        amount="62,46"
-                        status="Pending"
-                        selector={0}
+                        amount="1,43"
+                        selector={3}
+                        selectorPayments={1}
                       />
                     </div>
                     <div style={{ marginTop: 13 }}>
                       <HistorialCard
                         name="Marcelo"
                         norder="CT7525"
-                        date="Jun 27, 1:41 A.M"
-                        deadline="Jun 30, 1:41 A.M"
+                        date="Jun 28, 6:26 P.M"
+                        deadline="Jun 29, 6:26 P.M"
                         payment="Binance"
-                        amount="73,96"
-                        status="Pending"
-                        selector={0}
+                        amount="1,43"
+                        selector={3}
+                        selectorPayments={1}
                       />
                     </div>
                     {/* <div style={{ marginTop: 13 }}>
