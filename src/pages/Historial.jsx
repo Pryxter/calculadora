@@ -27,6 +27,7 @@ export const Historial = () => {
                         deadline="Jun 29, 6:26 P.M"
                         payment="Binance"
                         amount="1,43"
+                        urlIcon="Money.svg"
                         selector={3}
                         selectorPayments={1}
                       />
@@ -39,6 +40,7 @@ export const Historial = () => {
                         deadline="Jun 29, 6:26 P.M"
                         payment="Binance"
                         amount="1,43"
+                        urlIcon="Money.svg"
                         selector={3}
                         selectorPayments={1}
                       />

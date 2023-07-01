@@ -1,7 +1,47 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavbarLeft } from "../components/Home/NavbarLeft";
+import { addDoc, collection } from "@firebase/firestore";
+import { db } from "../firebase";
 
 export const Agregar = () => {
+  const [order, setOrder] = useState(0);
+  const [valor, setValor] = useState(0);
+  const [cliente, setCliente] = useState("");
+  const [mate, setMate] = useState("");
+  const [advertising, setAdvertising] = useState("");
+  const [nivel, setNivel] = useState("");
+
+  const jobCollection = collection(db, "db_1");
+
+  const time = Date.now();
+  const now = new Date(time);
+
+  const addClient = async (e) => {
+    e.preventDefault();
+
+    await addDoc(jobCollection, {
+      date: String(now),
+      order: order,
+      valor: Number(valor),
+      cliente: cliente,
+      mate: mate,
+      advertising: advertising,
+      nivel: nivel,
+      status: Number(2),
+      paymentStatus: Number(0),
+      game: Number(1),
+    });
+
+    alert("¡Cliente Registrado!");
+
+    setOrder("");
+    setValor(0);
+    setCliente("");
+    setMate("");
+    setAdvertising("");
+    setNivel("");
+  };
+
   useEffect(() => {
     document.title = "WoW - New";
   }, []);
@@ -14,9 +54,9 @@ export const Agregar = () => {
               <NavbarLeft />
             </div>
             <div>
-              <div className="agregar_container" style={{ marginLeft: 230 }}>
-                <form className="form_agregar">
-                  {/* <div>
+              <div className="agregar_container" style={{ marginLeft: 210 }}>
+                <form className="form_agregar" onSubmit={addClient}>
+                  <div>
                     <h1 style={{ marginLeft: 32, padding: "16px 0" }}>
                       Agregar nuevo cliente
                     </h1>
@@ -28,8 +68,20 @@ export const Agregar = () => {
                       </i>
                       <input
                         type="text"
-                        placeholder="Nombre"
+                        placeholder="N° Order"
                         className="input_agregar"
+                        onChange={(e) => setOrder(e.target.value)}
+                      />
+                    </div>
+                    <div>
+                      <i className="login_icon_agregar">
+                        <img src="/Icons/UserIcon.svg" alt="User" />
+                      </i>
+                      <input
+                        type="number"
+                        placeholder="Valor"
+                        className="input_agregar"
+                        onChange={(e) => setValor(e.target.value)}
                       />
                     </div>
                     <div>
@@ -38,18 +90,9 @@ export const Agregar = () => {
                       </i>
                       <input
                         type="text"
-                        placeholder="Banco"
+                        placeholder="Nombre del cliente"
                         className="input_agregar"
-                      />
-                    </div>
-                    <div>
-                      <i className="login_icon_agregar">
-                        <img src="/Icons/UserIcon.svg" alt="User" />
-                      </i>
-                      <input
-                        type="text"
-                        placeholder="Telefono"
-                        className="input_agregar"
+                        onChange={(e) => setCliente(e.target.value)}
                       />
                     </div>
                   </div>
@@ -60,8 +103,9 @@ export const Agregar = () => {
                       </i>
                       <input
                         type="text"
-                        placeholder="Cedula"
+                        placeholder="Acompañante"
                         className="input_agregar"
+                        onChange={(e) => setMate(e.target.value)}
                       />
                     </div>
                     <div>
@@ -70,8 +114,20 @@ export const Agregar = () => {
                       </i>
                       <input
                         type="text"
-                        placeholder="Red Social"
+                        placeholder="Advertising"
                         className="input_agregar"
+                        onChange={(e) => setAdvertising(e.target.value)}
+                      />
+                    </div>
+                    <div>
+                      <i className="login_icon_agregar">
+                        <img src="/Icons/UserIcon.svg" alt="User" />
+                      </i>
+                      <input
+                        type="text"
+                        placeholder="Nivel a Nivel"
+                        className="input_agregar"
+                        onChange={(e) => setNivel(e.target.value)}
                       />
                     </div>
                     <div>
@@ -79,7 +135,7 @@ export const Agregar = () => {
                         Registrar
                       </button>
                     </div>
-                  </div> */}
+                  </div>
                 </form>
               </div>
             </div>

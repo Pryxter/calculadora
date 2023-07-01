@@ -59,15 +59,15 @@ export const Home = () => {
                     />
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <img
                     src="/Historial/Owner.jpg"
                     alt="Logo"
                     style={{ height: 280 }}
                     className="home_img"
                   />
-                </div>
-                <p className="home_owner_p">Payments by Marcelo Hernandez</p>
+                </div> */}
+                {/* <p className="home_owner_p">Payments by Marcelo Hernandez</p> */}
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
-import "../../styles/Desktop/Historial.css";
+import { doc, updateDoc } from "@firebase/firestore";
+import { db } from "../../firebase";
 
-export const HistorialCard = (props) => {
+export const HistorialJobCard = (props) => {
   const titles = [
     "WOW! NEW PAYMENT 🤩",
     "WOW! JOB COMPLETED 🤩",
@@ -19,7 +20,7 @@ export const HistorialCard = (props) => {
     "h_card_wow_payment_paid",
   ];
 
-  const statusPayments = ["Pending", "Paid"];
+  const statusPayments = ["Pending", "Done"];
 
   const selector = props.selector;
   const paymentSelect = props.selectorPayments;
@@ -39,16 +40,16 @@ export const HistorialCard = (props) => {
           >
             {titles[selector]}
           </p>
-          <p className="h_card_wow_name">{props.name}</p>
+          <p className="h_card_wow_name">Level: {props.nivel}</p>
           <p className="h_card_wow_p">Powerleveling</p>
           <p className="h_card_wow_order">Order</p>
           <p className="h_card_wow_n_order">{props.norder}</p>
-          <p className="h_card_wow_payment_request">Payment Request</p>
-          <p className="h_card_wow_payment_request_date">{props.date}</p>
-          <p className="h_card_wow_deadline">Deadline</p>
-          <p className="h_card_wow_deadline_t">{props.deadline}</p>
-          <p className="h_card_wow_payment_type">Payment Type</p>
-          <p className="h_card_wow_payment_type_type">{props.payment}</p>
+          <p className="h_card_wow_payment_request">Client</p>
+          <p className="h_card_wow_payment_request_date">{props.client}</p>
+          <p className="h_card_wow_deadline">Work Date</p>
+          <p className="h_card_wow_deadline_t">{props.date}</p>
+          <p className="h_card_wow_payment_type">Mate</p>
+          <p className="h_card_wow_payment_type_type">{props.mate}</p>
           <p className="h_card_wow_amount">${props.amount}</p>
           <p className={selectorPayments[paymentSelect]}>
             {statusPayments[paymentSelect]}
