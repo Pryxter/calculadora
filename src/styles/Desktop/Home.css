@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 h1 {
   color: #fff;
 }
@@ -303,6 +304,18 @@ h3 {
   margin-top: 25px;
   margin-left: 32px;
 }
+.select_agregar {
+  padding: 8px 75px;
+  border-radius: 7px;
+  margin-top: 25px;
+  margin-left: 32px;
+}
+.select_agregar_ac {
+  padding: 8px 67px;
+  border-radius: 7px;
+  margin-top: 25px;
+  margin-left: 32px;
+}
 .login_icon_agregar {
   position: absolute;
 }
@@ -320,6 +333,32 @@ h3 {
 .btn_agregar:hover {
   background: rgb(202, 0, 0);
   cursor: pointer;
+}
+.btn_agregar_registrar {
+  background: rgb(228, 0, 0);
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.btn_agregar_registrar:hover {
+  background: rgb(202, 0, 0);
+  cursor: pointer;
+}
+.btn_agregar_enviando {
+  background: rgb(0, 148, 0);
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+  cursor: no-drop;
+}
+.user_success {
+  margin-top: 25px;
+  margin-left: 31px;
+  width: 281px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  background: rgb(0, 148, 0);
+  color: #ffffff;
 }
 .selec_container {
   margin-top: 40px;

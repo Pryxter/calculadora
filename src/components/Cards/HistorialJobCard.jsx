@@ -2,6 +2,8 @@ import { doc, updateDoc } from "@firebase/firestore";
 import { db } from "../../firebase";
 
 export const HistorialJobCard = (props) => {
+  const imgPath = ["Money.svg", "WoW_Logo.svg", "Diablo_Logo.svg"];
+
   const titles = [
     "WOW! NEW PAYMENT 🤩",
     "WOW! JOB COMPLETED 🤩",
@@ -30,7 +32,7 @@ export const HistorialJobCard = (props) => {
       <div className="h_card">
         <div>
           <img
-            src={`/Historial/${props.urlIcon}`}
+            src={`/Historial/${imgPath[props.urlIcon]}`}
             alt="money"
             className="h_img"
           />

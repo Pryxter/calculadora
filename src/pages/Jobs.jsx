@@ -57,7 +57,7 @@ export const Jobs = () => {
                                 client={cliente.cliente}
                                 date={dateClient.substring(0, 15)}
                                 mate={cliente.mate}
-                                urlIcon="WoW_Logo.svg"
+                                urlIcon={cliente.game}
                                 amount={cliente.valor}
                                 selector={cliente.status}
                                 selectorPayments={cliente.paymentStatus}

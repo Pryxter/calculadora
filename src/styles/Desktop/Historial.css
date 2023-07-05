@@ -203,3 +203,8 @@
 .list_history > ul:hover {
   color: #cecece;
 }
+.img_logo_selector {
+  margin-top: 12px;
+  margin-left: 80px;
+  height: 110px;
+}
